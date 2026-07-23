@@ -8,5 +8,6 @@ import { DUMMY_USERS } from './user/dummy-users';
 })
 export class AppComponent {
   title = 'demo-app';
+  // Step - 1 (Parent component sharing data with child component)
   users = DUMMY_USERS;
 }
