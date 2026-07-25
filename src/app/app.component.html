@@ -1,40 +1,45 @@
 <app-header></app-header>
-<p>Root App Component HTML</p>
-
+<!-- <p>Root App Component HTML</p> -->
 <!-- step 2 where app.component.html using property binding will share data with user.component.ts -->
 <main>
-  <ul id="users">
-    <li>
-      <app-user
-        [id]="users[0].id.toString()"
-        [avatar]="users[0].avatar"
-        [name]="users[0].name"
-        (select)="onSelectUser($event)"
-      />
-    </li>
-    <li>
-      <app-user
-        [id]="users[1].id.toString()"
-        [avatar]="users[1].avatar"
-        [name]="users[1].name"
-        (select)="onSelectUser($event)"
-      />
-    </li>
-    <li>
-      <app-user
-        [id]="users[2].id.toString()"
-        [avatar]="users[2].avatar"
-        [name]="users[2].name"
-        (select)="onSelectUser($event)"
-      />
-    </li>
-    <li>
-      <app-user
-        [id]="users[3].id.toString()"
-        [avatar]="users[3].avatar"
-        [name]="users[3].name"
-        (select)="onSelectUser($event)"
-      />
-    </li>
-  </ul>
+  <div class="content">
+    <ul id="users">
+      <ul>
+        <app-user
+          [id]="users[0].id"
+          [avatar]="users[0].avatar"
+          [name]="users[0].name"
+          (select)="onSelectUser($event)"
+        />
+      </ul>
+      <ul>
+        <app-user
+          [id]="users[1].id"
+          [avatar]="users[1].avatar"
+          [name]="users[1].name"
+          (select)="onSelectUser($event)"
+        />
+      </ul>
+      <ul>
+        <app-user
+          [id]="users[2].id"
+          [avatar]="users[2].avatar"
+          [name]="users[2].name"
+          (select)="onSelectUser($event)"
+        />
+      </ul>
+      <ul>
+        <app-user
+          [id]="users[3].id"
+          [avatar]="users[3].avatar"
+          [name]="users[3].name"
+          (select)="onSelectUser($event)"
+        />
+      </ul>
+    </ul>
+
+    <div class="tasks">
+      <h2>Task Here</h2>
+    </div>
+  </div>
 </main>
