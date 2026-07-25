@@ -7,6 +7,9 @@ import { DUMMY_USERS } from './user/dummy-users';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  onSelectUser(id: string) {
+    console.log('ID is: ', id);
+  }
   title = 'demo-app';
   // Step - 1 (Parent component sharing data with child component)
   users = DUMMY_USERS;
