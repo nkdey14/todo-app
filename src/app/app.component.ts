@@ -7,10 +7,15 @@ import { DUMMY_USERS } from './user/dummy-users';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  selectedUserId!: string;
+  users = DUMMY_USERS;
   onSelectUser(id: string) {
-    console.log('ID is: ', id);
+    this.selectedUserId = id;
   }
+  get selectedUser() {
+    return this.users.find((u) => u.id === this.selectedUserId)!;
+  }
+
   title = 'demo-app';
   // Step - 1 (Parent component sharing data with child component)
-  users = DUMMY_USERS;
 }
