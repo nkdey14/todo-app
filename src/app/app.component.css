@@ -1,26 +1,29 @@
-body {
+main {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
+  padding: 20px;
 }
 
 .content {
   display: flex;
-  gap: 20px;
-  padding: 20px;
   align-items: flex-start;
+  gap: 2rem;
+}
+
+#users {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+}
+
+#users li {
+  margin-bottom: 1rem;
 }
 
 .tasks {
   flex: 1;
   background: white;
-  min-height: 400px;
-  padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-top: auto;
+  padding: 1.5rem;
+  min-height: 500px;
 }
