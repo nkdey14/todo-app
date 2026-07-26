@@ -13,7 +13,7 @@ export class AppComponent {
     this.selectedUserId = id;
   }
   get selectedUser() {
-    return this.users.find((u) => u.id === this.selectedUserId)!;
+    return this.users.find((u) => u.id === this.selectedUserId);
   }
 
   title = 'demo-app';
