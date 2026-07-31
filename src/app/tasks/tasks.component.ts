@@ -15,21 +15,21 @@ export class TasksComponent {
       userId: 'u1',
       title: 'Adding login feature',
       summary: 'login with otp, gmail and username',
-      dueDate: '2026-06-28',
+      dueDate: '2026-08-25',
     },
     {
       id: 't2',
       userId: 'u2',
       title: 'Adding upload images',
       summary: 'Per product max 15 images to be uploaded',
-      dueDate: '2026-06-29',
+      dueDate: '2026-08-22',
     },
     {
       id: 't3',
       userId: 'u1',
       title: 'Adding upload product description',
       summary: 'add product description',
-      dueDate: '2026-06-29',
+      dueDate: '2026-08-15',
     },
   ];
 
