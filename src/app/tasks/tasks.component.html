@@ -6,16 +6,7 @@
 </div>
 
 <ul>
-  <li>
-    <app-task />
-  </li>
-  <li>
-    <app-task />
-  </li>
-  <li>
-    <app-task />
-  </li>
-  <li>
+  <li *ngFor="let task of selectedUserTasks">
     <app-task />
   </li>
 </ul>

@@ -6,5 +6,34 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./tasks.component.css'],
 })
 export class TasksComponent {
-  @Input({ required: true }) name!: string | undefined;
+  @Input({ required: true }) name?: string;
+  @Input({ required: true }) userId?: string;
+
+  tasks = [
+    {
+      id: 't1',
+      userId: 'u1',
+      title: 'Adding login feature',
+      summary: 'login with otp, gmail and username',
+      dueDate: '2026-06-28',
+    },
+    {
+      id: 't2',
+      userId: 'u2',
+      title: 'Adding upload images',
+      summary: 'Per product max 15 images to be uploaded',
+      dueDate: '2026-06-29',
+    },
+    {
+      id: 't3',
+      userId: 'u1',
+      title: 'Adding upload product description',
+      summary: 'add product description',
+      dueDate: '2026-06-29',
+    },
+  ];
+
+  get selectedUserTasks() {
+    return this.tasks.filter((t) => t.userId === this.userId);
+  }
 }

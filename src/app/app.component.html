@@ -10,7 +10,12 @@
     </ul>
 
     <div class="tasks">
-      <app-tasks *ngIf="selectedUser" [name]="selectedUser.name"> </app-tasks>
+      <app-tasks
+        *ngIf="selectedUser"
+        [name]="selectedUser.name"
+        [userId]="selectedUser.id"
+      >
+      </app-tasks>
     </div>
   </div>
 </main>
