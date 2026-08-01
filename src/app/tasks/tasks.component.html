@@ -1,7 +1,15 @@
+<!-- @if (isAddingTask) {
+  <app-add-task />
+} -->
+
+<div *ngIf="isAddingTask">
+  <app-new-task />
+</div>
+
 <div class="tasks">
   <header>
     {{ name }}'s Tasks
-    <button>Add Task</button>
+    <button (click)="addNewTask()">Add Task</button>
   </header>
 </div>
 

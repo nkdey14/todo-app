@@ -7,9 +7,16 @@ import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './user/user.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskComponent } from './tasks/task/task.component';
+import { NewTaskComponent } from './tasks/new-task/new-task.component';
 
 @NgModule({
-  declarations: [AppComponent, UserComponent, TasksComponent, TaskComponent],
+  declarations: [
+    AppComponent,
+    UserComponent,
+    TasksComponent,
+    TaskComponent,
+    NewTaskComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HeaderComponent],
   providers: [],
   bootstrap: [AppComponent],

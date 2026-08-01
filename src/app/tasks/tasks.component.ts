@@ -32,6 +32,7 @@ export class TasksComponent {
       dueDate: '2026-08-15',
     },
   ];
+  isAddingTask: boolean = false; // this is a boolean variable to check if the user is adding a new task
 
   get selectedUserTasks() {
     return this.tasks.filter((t) => t.userId === this.userId);
@@ -39,5 +40,9 @@ export class TasksComponent {
 
   onCompleteTask(id: string) {
     this.tasks = this.tasks.filter((t) => t.id !== id);
+  }
+
+  addNewTask() {
+    this.isAddingTask = true;
   }
 }
