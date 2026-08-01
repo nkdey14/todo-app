@@ -3,7 +3,7 @@
 } -->
 
 <div *ngIf="isAddingTask">
-  <app-new-task />
+  <app-new-task (cancelTask)="cancelTask()" />
 </div>
 
 <div class="tasks">
