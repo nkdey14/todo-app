@@ -49,4 +49,15 @@ export class TasksComponent {
   cancelTask() {
     this.isAddingTask = false;
   }
+
+  createTask(data: { title: string; summary: string; dueDate: string }) {
+    this.tasks.push({
+      id: 't' + (this.tasks.length + 1),
+      userId: this.userId!,
+      title: data.title,
+      summary: data.summary,
+      dueDate: data.dueDate,
+    });
+    this.isAddingTask = false;
+  }
 }
